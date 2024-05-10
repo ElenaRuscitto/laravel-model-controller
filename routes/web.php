@@ -25,3 +25,6 @@ Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'] )->name('nuov
 // Route::get('/nuova-pag', function () {
 //     return view('nuova-pagina');
 // })->name('nuova-pagina');
+
+Route::get('/nationality', [PageController::class, 'nationality'] )->name('nationality');
+Route::get('/best-movie', [PageController::class, 'bestMovies'] )->name('best-movie');
