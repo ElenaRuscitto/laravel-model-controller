@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ellix</a>
+          <a class="navbar-brand" href="#"><strong>Ellix &#10568;</strong></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -17,17 +17,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{route('best-movie')}}">Best Movies</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+
             </ul>
           </div>
         </div>
       </nav>
 
-    <h1>Header</h1>
 
-    {{-- <a href="{{route('home')}}">Home</a> --}}
-    <a href="{{route('nuova-pagina')}}">Nuova Pagina</a>
+
+
 
 </header>

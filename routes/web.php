@@ -16,15 +16,11 @@ use App\Http\Controllers\Guest\PageController;
 Route::get('/', [PageController::class, 'index'] )->name('home');
 
 
-// Route::get('/', function () {
-//     return view('home');
-// })->name('home');
 
-Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'] )->name('nuova-pagina');
 
-// Route::get('/nuova-pag', function () {
-//     return view('nuova-pagina');
-// })->name('nuova-pagina');
+// Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'] )->name('nuova-pagina');
+
 
 Route::get('/nationality', [PageController::class, 'nationality'] )->name('nationality');
 Route::get('/best-movie', [PageController::class, 'bestMovies'] )->name('best-movie');
+Route::get('/detail/{id}', [PageController::class, 'detail'] )->name('detail');

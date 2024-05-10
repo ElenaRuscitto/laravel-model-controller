@@ -19,19 +19,25 @@ class PageController extends Controller
 
     public function nationality(){
         $title = 'Nationality';
-        // $movies = Movie::where('nationality', 'american');
-        $movies = Movie::orderBy('nationality')->get();
-        return view('nationality', 'title');
+        $movies = Movie::where('nationality', 'american')->get();
+
+        return view('home', compact('movies', 'title'));
     }
 
     public function bestMovies(){
         $title = 'The Best Movies';
-
         $movies = Movie::where('vote', '>=', 8)
                         ->orderBy('title')
                         ->get();
 
         return view('home', compact('movies', 'title'));
+    }
+
+    public function detail($id){
+        $title = 'Details';
+        $movie = Movie::find($id);
+
+        return view('detail', compact('movie', 'title'));
     }
 
 
