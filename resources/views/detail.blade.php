@@ -11,7 +11,7 @@
 
 <div class="bg-dark">
     <div class="container">
-        <h1 class="text-white text-center py-3">{{ $title }}</h1>
+        <h1 class="text-white text-center py-3">{{ $title }} - {{ $movie->title }}</h1>
         <div class="row row-cols-2 text-white ">
 
 
